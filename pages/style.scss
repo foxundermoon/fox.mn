@@ -2,27 +2,29 @@ $base-typing-speed: 300ms;
 $code-typing-animation-duration: 1200ms;
 
 .content {
-  position: relative;
-  width: 80vw;
-  margin: 10vh auto;
+  // position: relative;
+  float: right;
+  width: 60vw;
+  // margin: 1vh auto;
 }
 
 .container {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  float: right;
 }
 
 #bongo-cat {
-  position: absolute;
-  height: 80vh;
-  width: 80vw;
-  top: 100vh;
+  // position: absolute;
+  height: 60vh;
+  width: 60vw;
+  top: 10vh;
   bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  // left: 0;
+  right: -10vw;
+  // margin: auto;
 }
 
 .typing-animation {
