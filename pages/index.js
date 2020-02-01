@@ -15,8 +15,21 @@ import './style.scss'
 const Home = () => (
   <div>
     <Head>
-      <title>fox land site</title>
+      <title>fox landing site</title>
       <link rel="icon" href="/favicon.ico" />
+      <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?a82a321b3e7190eff23bd08fafe7e4c2";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+          `,
+          }}
+        />
     </Head>
 
     <div className="content">
