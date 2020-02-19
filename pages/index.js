@@ -10,7 +10,7 @@ import LinkedIn from '../components/icons/linkedin'
 import Instagram from '../components/icons/instagram'
 
 import Cat2 from '../components/Cat'
-import './style.scss'
+import '../components/cat/style.scss'
 
 const Home = () => (
   <div>
