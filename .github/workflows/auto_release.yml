@@ -40,7 +40,7 @@ jobs:
           token: ${{secrets.github_token}}
       - name: set version env
         run: |
-          echo "::set-env name=VERSION::$(cat lerna.json|jq -r .version)"
+          echo "::set-env name=VERSION::$(jq '.version' -r  package.json)"
       - run: sudo timedatectl set-timezone Asia/Shanghai
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
@@ -48,13 +48,13 @@ jobs:
         with:
           node-version: 12.x
       # ------------------------- release  ------------------------------
+      - run: yarn
       - name: build and export
         if: env.NEED_RELEASE == 'yes'
         env:
           NODE_ENV: production
           TEL: ${{ secrets.TEL }}
         run: |
-          yarn
           yarn build
           yarn export
       - name: Create Release
