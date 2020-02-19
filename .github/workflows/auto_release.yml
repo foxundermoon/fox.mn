@@ -52,6 +52,7 @@ jobs:
         if: env.NEED_RELEASE == 'yes'
         env:
           NODE_ENV: production
+          TEL: ${{ secrets.TEL }}
         run: |
           yarn
           yarn build

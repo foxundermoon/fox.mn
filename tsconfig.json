@@ -27,5 +27,5 @@
     "disableSourceOfProjectReferenceRedirect": true
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["next-env.d.ts", "types/*.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"]
 }

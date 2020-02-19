@@ -1,0 +1,129 @@
+import withResume from '../components/WithResume.tsx'
+import Header from '../components/resume/Header'
+import InfoIcon from '@material-ui/icons/Info'
+import CastForEducationIcon from '@material-ui/icons/CastForEducation'
+import WorkIcon from '@material-ui/icons/Work';
+
+export const meta = {
+  title: 'blocchain resume',
+}
+export default withResume(meta)
+
+<Header />
+
+## <InfoIcon /> 个人信息
+- 男、1990 年 12 月出生
+- 求职意向：区块链技术研究员
+- 工作经验：5 年
+- 住 址：杭州市 西湖区
+
+## <CastForEducationIcon /> 教育经历
+
+- 本科，山东建筑大学
+- 网络工程专业，2010.9~2014.7
+
+
+## <WorkIcon /> 工作经历
+
+- RocketX 协同创业， 2019.12~now
+
+  负责前端优化、Electron 桌面端封装、代码 review。
+
+- [云片](https://www.yunpian.com/)，技术专家，2019.1~2019.9
+
+  负责营销云引擎设计与核心代码编写。
+
+- 雷石游戏 cto ,2018.06~2018.12
+
+  负责区块链多币种云钱包架构设计、让游戏与区块链相结合
+
+- [个推](https://www.ge.cn/) 2016.01~2018.06 DevOps 工程师
+
+  层负责推送 sdk 的重构、日志收集检索平台 logful、DevOps 容器化改造等工作
+
+- 杭州时贝科技 cto 2015.10~2016.01
+
+  技术团队的组建、安卓端的架构及编码。两个月的时间完成产品上线
+
+- 济南数维信息科技 研发经理 2014.03~2015.10
+
+  gis 系统安卓 sdk 编写，客户端与服务端的双工通信方案设计与实现、客户端 SQlite 与服务端多版本的数据同步方案设计与实现。
+
+## <img src="assets/project-diagram-solid.svg" width="30px" /> 项目经历
+
+- [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) 开源项目、vscode 的 shell script、Dockerfile 等文件格式化插件，目前超过 60 余万次下载安装
+
+  [![donwloads](https://vsmarketplacebadge.apphb.com/downloads-short/foxundermoon.shell-format.svg)](https://github.com/foxundermoon/vs-shell-format) [![install](https://vsmarketplacebadge.apphb.com/installs-short/foxundermoon.shell-format.svg)](https://github.com/foxundermoon/vs-shell-format)
+
+- [**RocketX**](http://admin.hestech.cn/) 2019.12~至今
+  - 简介： 一个客服系统，海外版即将上线。
+  - 角色： 朋友做的项目，正好我闲着就帮忙贡献代码。主要负责解决前端疑难杂症，加载优化还有桌面端封装。
+  - 技术： 后端:golang、 前端:react、material-ui、 桌面端:electron
+
+* **营销云** @[云片](https://www.yunpian.com/) 2019.3~2019.8
+
+  - 功能：通过人群节点、各条件节点、分组节点、筛选节点、各渠道发送节点、延时等节点自由组合出符合客户业务需求的营销策略、或者通过模板提供 A/B test、二次营销等常用策略
+  - 角色：负责营销云策略引擎架构设计、引擎与核心业务节点编码
+  - 技术：有限状态机、正则引擎、[MVEL](https://github.com/mvel/mvel)、spring boot、 SpringCloud、reactor、webflux、mysql、mongo、rocketMQ
+  - 特性：策略执行支持分布式横向扩展、引擎支持同步、异步方式调度、策略执行 context 可序列化存储以及反序列化继续执行
+  - 项目已上线并且有客户接入使用、每天有过万次的策略被执行
+
+* 区块链云钱包 @雷石游戏
+
+  - 功能：链接游戏与区块链的服务平台、游戏开发者可以通过钱包服务无感知的把区块链 token 带入游戏世界
+  - 角色： 钱包服务的架构设计、钱包的接口设计、核心代码的编写
+  - 技术： typescript、nodejs、web3.js
+  - 特性：成功接入 erc20、eth、波场币、nas 到钱包服务。上线并且成功接入[波场麻将](http://www.bite5.com/index.php/article-13078)、捕鱼等多款游戏
+
+* tst 合约 @雷石游戏
+* [加密麻将 3D](http://www.bite5.com/index.php/article-13078) 等多款区块链游戏 @雷石游戏
+* 个推 b2d 事业部后端 DevOps 流水线搭建、docker、k8s 容器化改造 [@个推 每日互动](https://www.ge.cn/)
+* 个推大数据基础服务能力往业务研发线迁移的研究实践以及方案流程制定。(azkaban、hive、hadoop、gradleDSL
+  for hive 、shell、python) [@个推](https://www.ge.cn/)
+* Logful 前端的框架搭建以及 crash 日志检索展示页面的编写。(es6、react、redux、jwt) [@个推](https://www.ge.cn/)
+* 个推开源项目日志收集平台 logful server 端的性能优化及重构。tps 从单进程两百多提高到两千。服务数亿终端(java、 springboot、 jpa、elasticsearch、mysql、MongoDB、redis、graylog2、goreplay、gatling) [@个推](https://www.ge.cn/)
+* 个推推送 sdk(覆盖数十亿终端)通知模块的性能优化、代码重构。(android 、java) [@个推](https://www.ge.cn/)
+* 技术团队的组建、安卓端的架构及编码。两个月的时间完成产品上线。 @时贝 2015.10-2016.01
+
+## <img src="assets/award-solid.svg" width="30px" /> 奖励&活动
+
+- 2011 《[第八届齐鲁软件设计大赛](https://www.softqilu.com/)》 安卓手机游戏 jump popo 一等奖。
+- 2017 《[log-rewrite](https://www.getui.com/cn/industry/2017/05/050383.html)》通过改变 java ast 语法树在编译期改写日志；并在厦门安卓 bus 分享。
+- 2018 杭州技术沙龙分享《[pwa](http://www.apkbus.com/thread-591789-1-1.html)》 下一代移动端开发方式。
+- 2018 重庆的线下沙龙分享《[flutter](http://www.apkbus.com/thread-596304-1-1.html)》 下一代移动端开发方式。
+- 2018 [火币技术创想会](https://t.cj.sina.com.cn/articles/view/5509973368/1486b8578001009zpv)发表演讲 《[下一代公链演进方向](https://bitool.cn/articles-f9b5f82.html)》
+- 2019 杭州云片技术开放日分享《[云原生编程语言——pulumi](https://fox.mn/activity/cloudnative-pulumi.pptx)》
+- 2019 武汉云片技术开放日分享《[Serverless 之 OpenFaaS](https://mp.weixin.qq.com/s/KjbNeTt6cqx2gwkxRkSJiw)》
+- 2019 云片&网易云技术沙龙分享《[云原生时代 DevOps](https://mp.weixin.qq.com/s/QgeFJF6fO0zH-QCEWB0JbA)》
+
+## <img src="assets/user-tag-solid.svg" width="30px" /> 个人标签
+
+- 强大的自学能力
+- 比好好的情绪管理能力
+- 优秀的抽象与分层能力
+- 擅长异步编程
+- 喜欢函数式编程
+
+## <img src="assets/tools-solid.svg" width="30px" /> 技能清单
+
+- ★★★★ C#
+- ★★★★★ Java
+- ★★★★ JavaScript、typescript
+- ★★★ Python、bash
+- ★★★★ solidity、web3.js
+- ★★ Finite State Machine、Regex engine
+- ★★☆ Spring Boot、 Spring cloud
+- ★★ hive、Hadoop
+- ★★★ MySQL、Redis、ES、MongoDB、RethinkDB
+- ★☆ rust、scala、kotlin、golang
+- ★★★★ Docker、 swarm、 k8s、cloudNative
+
+## <img src="assets/heartbeat-solid.svg" width="20px" /> 爱好
+
+- 水肺 aow
+- 自由潜 Aida 3★ 29 米、静态闭气 5 分 22 秒
+- 游泳
+- 阅读
+- 骑行
+- 冥想
+- 瑜伽

@@ -12,6 +12,10 @@ const withMDX = require('@next/mdx')({
 module.exports = withMDX(
   withSass({
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'tsx'],
+    exportTrailingSlash: true,
+    env: {
+      TEL: process.env.TEL
+    },
     webpack(config, option) {
       config.module.rules.push({
         test: /\.svg$/,
