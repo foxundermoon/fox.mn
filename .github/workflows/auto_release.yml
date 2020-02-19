@@ -127,7 +127,7 @@ jobs:
           path: ./upload.log
       - name: refresh-cdn
         if: env.NEED_RELEASE == 'yes' && env.RELEASE_TYPE == 'release'
-        working-directory: ./cout
+        working-directory: ./out
         run: |
           find . | grep -v '^./_next' | \
           sed  -e 's|./|https://fox.mn/|' | \
