@@ -11,8 +11,11 @@ import LabelIcon from '@material-ui/icons/Label'
 import EventIcon from '@material-ui/icons/Event'
 import BuildIcon from '@material-ui/icons/Build'
 import FolderIcon from '@material-ui/icons/Folder'
-import { T, R } from '../components/Tag'
+import { T, R, Ht } from '../components/Tag'
 import Edit from '../components/resume/EditMe'
+import Grid from '@material-ui/core/Grid'
+import BrightnessAutoIcon from '@material-ui/icons/BrightnessAuto'
+
 export const meta = {
   title: 'blocchain resume',
 }
@@ -33,7 +36,8 @@ export default withResume(meta)
 - 网络工程专业，2010.9~2014.7
 
 ## <WorkIcon /> Work
-- 为创新领域提供<T>技术顾问服务</T>     2019.11~now
+
+- 为创新领域提供<T>技术顾问服务</T> 2019.11~now
 - [云片](https://www.yunpian.com/) <T>技术专家</T> 2019.1~2019.9
 
   负责 IDaaS 项目(类似国外[Auth0](https://auth0.com/))技术调研和技术方案输出、[营销云](https://www.yunpian.com/product/marketing)引擎设计与核心代码编写。
@@ -60,6 +64,7 @@ export default withResume(meta)
 - [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) 开源项目、vscode 的 shell script、Dockerfile 等文件格式化插件，目前超过十余万用户安装 [![install](https://vsmarketplacebadge.apphb.com/installs-short/foxundermoon.shell-format.svg)](https://github.com/foxundermoon/vs-shell-format)
 
 - [RocketX](http://admin.hestech.cn/) 2019.12~至今
+
   - 简介： 一个专注安全、稳定、智能的客服系统，海外版即将上线。
   - 角色： 为创业的朋友提供的技术顾问服务。主要负责解决前端疑难杂症，加载优化还有桌面端封装。
   - 技术： 后端:golang、 前端:react、material-ui、 桌面端:electron
@@ -102,6 +107,7 @@ export default withResume(meta)
 
 ## <LabelIcon /> Label
 
+- 具有独立思考能力
 - 紧跟新的技术趋势
 - 强大的自学能力
 - 比好的情绪管理能力
@@ -111,26 +117,36 @@ export default withResume(meta)
 
 ## <BuildIcon  /> Skill & Language
 
-- <R v="4" />  C#
-- <R v="5" />  Java
-- <R v="4" />  JavaScript、typescript
-- <R v="3.5" />  Python、bash
-- <R v="3.5" /> solidity、web3.js
-- <R v="3" />  Finite State Machine、Regex engine
-- <R v="4" />  Spring Boot、 Spring cloud
+- <R v="4" /> JavaScript、typescript
+- <R v="3.5" /> solidity、web3.js、 ipfs、 libp2p
+- <R v="1" /> WebAssembly
+- <R v="4" /> C#
+- <R v="5" /> Java
+- <R v="3.5" /> Python、bash
+- <R v="3" /> Finite State Machine、Regex engine
+- <R v="4" /> Spring Boot、 Spring cloud
 - <R v="2" /> hive、Hadoop
-- <R v="3" />  MySQL、Redis、ES、MongoDB、RethinkDB
-- <R v="2.5" />  rust、scala、kotlin、golang
+- <R v="3" /> MySQL、Redis、ES、MongoDB、RethinkDB
+- <R v="2.5" /> rust、scala、kotlin、golang
+- <R v="3.5" /> Docker、 swarm、 k8s、cloudNative
 - <R v="3.5" /> Docker、 swarm、 k8s、cloudNative
 
 ## <FavoriteIcon /> Hobby
 
-- 潜水
-- 游泳
-- 阅读
-- 骑行
-- 冥想
-- 瑜伽
+<Grid container>
+  <Ht> 潜水 </Ht>
+  <Ht> 游泳 </Ht>
+  <Ht> 阅读 </Ht>
+  <Ht> 骑行 </Ht>
+  <Ht> 冥想 </Ht>
+  <Ht> 瑜伽 </Ht>
+</Grid>
 
+## <BrightnessAutoIcon />  Summary
+
+- 我比较喜欢自学各种新的技术栈，最爱的是前端和去中心化的网络技术；前端可以方便的表达创意，去中心化网络技术栈提供了很多的可能性。
+- 我对以太坊平台有较多的使用经验，曾向bai汇报过合约漏洞，后来合约升级更名为[baic](https://www.coingecko.com/en/coins/baic),帮盆友刷票上FCoin交易所，通过自己编写转账合约、多个账户同时发起多笔合约调用，几小时的时间成功刷了十来万票。
+- 我很喜欢没有正式工作的这段时间，每天研究一下自己感兴趣的技术，写写没有很功利目的的代码。但是生活还是需要开支，所以想寻找一份偏技术研究方向的工作，如果能远程或者支持兼职就更棒。我一直在持续关注去中心化网络的技术发展，主要有 ipfs、libp2p、 filecoin、holochain。为了能阅读他们的源码，花了时间自学了rust。
 
 <Edit />
+ 

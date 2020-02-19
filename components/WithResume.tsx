@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../src/theme'
 import { Container, Paper } from '@material-ui/core'
+import { Copyright } from './Copyright'
 
 interface Meta {
   title: string
@@ -29,6 +30,9 @@ export default (meta: Meta): FunctionComponent => ({ children }) => {
               {children}
             </Container>
           </main>
+          <footer>
+            <Copyright />
+          </footer>
         </ThemeProvider>
       </React.Fragment>
     </MDXProvider>
