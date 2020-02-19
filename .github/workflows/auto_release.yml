@@ -119,7 +119,7 @@ jobs:
           --src-dir . \
           --log-file ../upload.log \
           --thread-count 100
-        working-directory: ./cout
+        working-directory: ./out
       - uses: actions/upload-artifact@v1
         if: env.NEED_RELEASE == 'yes' && env.RELEASE_TYPE == 'release'
         with:
