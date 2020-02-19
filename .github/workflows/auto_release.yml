@@ -49,6 +49,7 @@ jobs:
           node-version: 12.x
       # ------------------------- release  ------------------------------
       - run: yarn
+        if: env.NEED_RELEASE == 'yes'
       - name: build and export
         if: env.NEED_RELEASE == 'yes'
         env:
@@ -134,3 +135,30 @@ jobs:
           tee -a refresh.xt | \
           qshell cdnrefresh
           echo 'https://fox.mn' |qshell cdnrefresh
+
+      - name: deploy website success
+        uses: foxundermoon/feishu-action@v1
+        if: env.NEED_RELEASE == 'yes'
+        with:
+          url: ${{ secrets.FEISHU_BOT }}
+          title: website ${{ env.RELEASE_TYPE }} success
+          text: |
+            view:   ${{ steps.deploy.outputs.preview-url }}
+            release: ${{ github.event.repository.html_url }}/releases/tag/${{ env.VERSION }}.${{ steps.buildnumber.outputs.build_number }}
+            action detail: ${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }}
+            committer: ${{ github.actor }}
+            repo: ${{ github.event.repository.html_url }}
+            compare: ${{ github.event.compare }}
+            headCommit: ${{ github.event.head_commit.url }}
+      - name: release action failed notice
+        uses: foxundermoon/feishu-action@v1
+        if: env.NEED_RELEASE == 'yes' && failure()
+        with:
+          url: ${{ secrets.FEISHU_BOT }}
+          title: website ${{ env.RELEASE_TYPE }} failure
+          text: |
+            action detail: ${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }}
+            repo: ${{ github.event.repository.html_url }}
+            headCommit: ${{ github.event.head_commit.url }}
+            committer: ${{ github.actor }}
+            compare: ${{ github.event.compare }}
