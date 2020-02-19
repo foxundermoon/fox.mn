@@ -3,6 +3,14 @@ import Header from '../components/resume/Header'
 import InfoIcon from '@material-ui/icons/Info'
 import CastForEducationIcon from '@material-ui/icons/CastForEducation'
 import WorkIcon from '@material-ui/icons/Work';
+import Skills from '../components/resume/SkillTags'
+
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import KeyIcon from '@material-ui/icons/VpnKey';
+import LabelIcon from '@material-ui/icons/Label';
+import EventIcon from '@material-ui/icons/Event';
+import BuildIcon from '@material-ui/icons/Build';
+import FolderIcon from '@material-ui/icons/Folder';
 
 export const meta = {
   title: 'blocchain resume',
@@ -11,19 +19,19 @@ export default withResume(meta)
 
 <Header />
 
-## <InfoIcon /> 个人信息
+## <InfoIcon /> Info
 - 男、1990 年 12 月出生
 - 求职意向：区块链技术研究员
 - 工作经验：5 年
-- 住 址：杭州市 西湖区
+- 住 址：杭州市
 
-## <CastForEducationIcon /> 教育经历
+## <CastForEducationIcon /> Edu
 
 - 本科，山东建筑大学
 - 网络工程专业，2010.9~2014.7
 
 
-## <WorkIcon /> 工作经历
+## <WorkIcon /> Work
 
 - RocketX 协同创业， 2019.12~now
 
@@ -49,11 +57,9 @@ export default withResume(meta)
 
   gis 系统安卓 sdk 编写，客户端与服务端的双工通信方案设计与实现、客户端 SQlite 与服务端多版本的数据同步方案设计与实现。
 
-## <img src="assets/project-diagram-solid.svg" width="30px" /> 项目经历
-
-- [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) 开源项目、vscode 的 shell script、Dockerfile 等文件格式化插件，目前超过 60 余万次下载安装
-
-  [![donwloads](https://vsmarketplacebadge.apphb.com/downloads-short/foxundermoon.shell-format.svg)](https://github.com/foxundermoon/vs-shell-format) [![install](https://vsmarketplacebadge.apphb.com/installs-short/foxundermoon.shell-format.svg)](https://github.com/foxundermoon/vs-shell-format)
+## <FolderIcon /> Project
+- [DnCov](https://github.com/DnCov/transparent-info) 基于去中心化技术ipfs的疫情信息平台
+- [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) 开源项目、vscode 的 shell script、Dockerfile 等文件格式化插件，目前超过十余万用户安装 [![install](https://vsmarketplacebadge.apphb.com/installs-short/foxundermoon.shell-format.svg)](https://github.com/foxundermoon/vs-shell-format)
 
 - [**RocketX**](http://admin.hestech.cn/) 2019.12~至今
   - 简介： 一个客服系统，海外版即将上线。
@@ -85,7 +91,7 @@ export default withResume(meta)
 * 个推推送 sdk(覆盖数十亿终端)通知模块的性能优化、代码重构。(android 、java) [@个推](https://www.ge.cn/)
 * 技术团队的组建、安卓端的架构及编码。两个月的时间完成产品上线。 @时贝 2015.10-2016.01
 
-## <img src="assets/award-solid.svg" width="30px" /> 奖励&活动
+## <EventIcon /> Event
 
 - 2011 《[第八届齐鲁软件设计大赛](https://www.softqilu.com/)》 安卓手机游戏 jump popo 一等奖。
 - 2017 《[log-rewrite](https://www.getui.com/cn/industry/2017/05/050383.html)》通过改变 java ast 语法树在编译期改写日志；并在厦门安卓 bus 分享。
@@ -96,15 +102,15 @@ export default withResume(meta)
 - 2019 武汉云片技术开放日分享《[Serverless 之 OpenFaaS](https://mp.weixin.qq.com/s/KjbNeTt6cqx2gwkxRkSJiw)》
 - 2019 云片&网易云技术沙龙分享《[云原生时代 DevOps](https://mp.weixin.qq.com/s/QgeFJF6fO0zH-QCEWB0JbA)》
 
-## <img src="assets/user-tag-solid.svg" width="30px" /> 个人标签
-
+## <LabelIcon /> Label
+- 紧跟新的技术趋势
 - 强大的自学能力
-- 比好好的情绪管理能力
+- 比好的情绪管理能力
 - 优秀的抽象与分层能力
 - 擅长异步编程
 - 喜欢函数式编程
 
-## <img src="assets/tools-solid.svg" width="30px" /> 技能清单
+## <BuildIcon  /> Skill & Language
 
 - ★★★★ C#
 - ★★★★★ Java
@@ -118,10 +124,9 @@ export default withResume(meta)
 - ★☆ rust、scala、kotlin、golang
 - ★★★★ Docker、 swarm、 k8s、cloudNative
 
-## <img src="assets/heartbeat-solid.svg" width="20px" /> 爱好
+## <FavoriteIcon /> Hobby
 
-- 水肺 aow
-- 自由潜 Aida 3★ 29 米、静态闭气 5 分 22 秒
+- 潜水
 - 游泳
 - 阅读
 - 骑行
