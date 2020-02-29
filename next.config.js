@@ -6,6 +6,9 @@ const withMDX = require('@next/mdx')({
   options: {
     rehypePlugins: [rehypePrism],
     hastPlugins: [rehypePrism], // <-----------  now effect
+    // header: `import sss from 'aaa'\nimport bb from 'bbb`,
+    footer: `export const bb= 12456`
+
   },
 })
 

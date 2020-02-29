@@ -12,6 +12,8 @@ import Instagram from '../components/icons/instagram'
 import Cat2 from '../components/Cat'
 import '../components/cat/style.scss'
 
+import Cat3 from '~/components/Cat'
+
 const Home = () => (
   <div>
     <Head>
@@ -34,7 +36,8 @@ const Home = () => (
 
     <div className="content">
       <div className="container">
-        <Cat2 />
+        <Cat3 />
+
 
         <h1 className="name">Fox Under Moon</h1>
         <h2 className="handle">@foxundermoon</h2>
