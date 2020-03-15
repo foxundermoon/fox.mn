@@ -1,19 +1,17 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
-import Cat from '../components/cat.svg'
-
 import NPM from '../components/icons/npm'
 import GitHub from '../components/icons/github'
 import Twitter from '../components/icons/twitter'
 import LinkedIn from '../components/icons/linkedin'
 import Instagram from '../components/icons/instagram'
 import Email from '../components/icons/email'
+import Cat from '~/components/Cat'
 
-import Cat2 from '../components/Cat'
+
 import '../components/cat/style.scss'
 
-import Cat3 from '~/components/Cat'
 
 const Home = () => (
   <div>
@@ -37,7 +35,7 @@ const Home = () => (
 
     <div className="content">
       <div className="container">
-        <Cat3 />
+        <Cat />
 
 
         <h1 className="name">Fox Under Moon</h1>
