@@ -8,6 +8,7 @@ import GitHub from '../components/icons/github'
 import Twitter from '../components/icons/twitter'
 import LinkedIn from '../components/icons/linkedin'
 import Instagram from '../components/icons/instagram'
+import Email from '../components/icons/email'
 
 import Cat2 from '../components/Cat'
 import '../components/cat/style.scss'
@@ -57,6 +58,9 @@ const Home = () => (
           {/* <a href="https://www.npmjs.com/foxmn">
             <NPM className="npm" />
           </a> */}
+          <a href="mailto:hi@fox.mn">
+            <Email className="email" />
+          </a>
         </div>
       </div>
       <style jsx>{`
@@ -156,6 +160,12 @@ const Home = () => (
         #icons :global(.npm):hover :global(.inner) {
           fill: #fff;
         }
+
+        #icons :global(.email):hover {
+          fill: #ffc107;
+          filter: drop-shadow(0 0 0.2em #0077b5);
+        }
+
       `}</style>
 
       <style global jsx>{`
