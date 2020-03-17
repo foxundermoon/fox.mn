@@ -60,6 +60,9 @@ const Home = () => (
             <Email className="email" />
           </a>
         </div>
+        <footer>
+          <a href="http://www.beian.miit.gov.cn/">浙ICP备17058064号-1</a>
+        </footer>
       </div>
       <style jsx>{`
         #root {
@@ -67,6 +70,14 @@ const Home = () => (
           display: flex;
           justify-content: center;
           height: 100%;
+        }
+
+        footer{
+          margin-top: 36px;
+
+        }
+        footer a{
+          color:#333;
         }
 
         img {
